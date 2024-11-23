@@ -1,0 +1,11 @@
+{
+  "type": "model-python",
+  "require": {
+    "typehub/typeapi": {
+      "target": "./src/model",
+      "mapping": {
+        "typeschema": "TypeSchema.Model"
+      }
+    }
+  }
+}
