@@ -14,7 +14,6 @@ class Operation(BaseModel):
     return_: Optional[Response] = Field(default=None, alias="return")
     security: Optional[List[str]] = Field(default=None, alias="security")
     stability: Optional[int] = Field(default=None, alias="stability")
-    tags: Optional[List[str]] = Field(default=None, alias="tags")
     throws: Optional[List[Response]] = Field(default=None, alias="throws")
     pass
 
