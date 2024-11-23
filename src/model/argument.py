@@ -1,7 +1,7 @@
-from pydantic import BaseModel, Field, GetCoreSchemaHandler
+from pydantic import BaseModel, Field, GetCoreSchemaHandler, Tag
 from pydantic_core import CoreSchema, core_schema
-from typing import Any, Dict, Generic, List, Optional, TypeVar
-from .property_type import PropertyType
+from typing import Any, Dict, Generic, List, Optional, TypeVar, Annotated, Union
+from TypeSchema.Model import PropertyType
 from .any_property_type import AnyPropertyType
 from .array_property_type import ArrayPropertyType
 from .boolean_property_type import BooleanPropertyType

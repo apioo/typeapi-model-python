@@ -15,7 +15,7 @@ classifiers = [
     "Topic :: Software Development :: Code Generators",
 ]
 dependencies = [
-    "pydantic~=2.9.2",
+    "typeschema-model~=0.1.1",
 ]
 
 [project.urls]
