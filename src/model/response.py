@@ -13,6 +13,7 @@ from .reference_property_type import ReferencePropertyType
 from .string_property_type import StringPropertyType
 
 
+# Describes the response of the operation
 class Response(BaseModel):
     code: Optional[int] = Field(default=None, alias="code")
     content_type: Optional[str] = Field(default=None, alias="contentType")

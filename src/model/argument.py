@@ -13,6 +13,7 @@ from .reference_property_type import ReferencePropertyType
 from .string_property_type import StringPropertyType
 
 
+# Describes arguments of the operation
 class Argument(BaseModel):
     content_type: Optional[str] = Field(default=None, alias="contentType")
     in_: Optional[str] = Field(default=None, alias="in")
