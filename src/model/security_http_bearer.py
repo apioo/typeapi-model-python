@@ -4,6 +4,7 @@ from typing import Any, Dict, Generic, List, Optional, TypeVar, Annotated, Union
 from .security import Security
 
 
+# Describes HTTP Bearer authentication, typically using a bearer token (e.g., JWT).
 class SecurityHttpBearer(Security):
     type: Literal["httpBearer"] = Field(alias="type")
     pass

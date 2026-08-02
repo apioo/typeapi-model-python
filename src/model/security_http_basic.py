@@ -4,6 +4,7 @@ from typing import Any, Dict, Generic, List, Optional, TypeVar, Annotated, Union
 from .security import Security
 
 
+# Describes HTTP Basic authentication, requiring a base64-encoded username and password.
 class SecurityHttpBasic(Security):
     type: Literal["httpBasic"] = Field(alias="type")
     pass

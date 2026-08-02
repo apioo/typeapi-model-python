@@ -4,6 +4,7 @@ from typing import Any, Dict, Generic, List, Optional, TypeVar, Annotated, Union
 from .security import Security
 
 
+# Describes API key authentication passed via a header or query parameter.
 class SecurityApiKey(Security):
     type: Literal["apiKey"] = Field(alias="type")
     in_: Optional[str] = Field(default=None, alias="in")

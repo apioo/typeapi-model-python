@@ -4,6 +4,7 @@ from typing import Any, Dict, Generic, List, Optional, TypeVar, Annotated, Union
 from .security import Security
 
 
+# Describes OAuth 2.0 authentication, defining endpoints and scopes required by the API.
 class SecurityOAuth(Security):
     type: Literal["oauth2"] = Field(alias="type")
     authorization_url: Optional[str] = Field(default=None, alias="authorizationUrl")
