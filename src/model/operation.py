@@ -1,10 +1,11 @@
 from pydantic import BaseModel, Field, GetCoreSchemaHandler, Tag
 from pydantic_core import CoreSchema, core_schema
-from typing import Any, Dict, Generic, List, Optional, TypeVar, Annotated, Union
+from typing import Any, Dict, Generic, List, Optional, TypeVar, Annotated, Union, Literal
 from .argument import Argument
 from .response import Response
 
 
+# Describes an API endpoint operation.
 class Operation(BaseModel):
     arguments: Optional[Dict[str, Argument]] = Field(default=None, alias="arguments")
     authorization: Optional[bool] = Field(default=None, alias="authorization")
@@ -15,6 +16,5 @@ class Operation(BaseModel):
     security: Optional[List[str]] = Field(default=None, alias="security")
     stability: Optional[int] = Field(default=None, alias="stability")
     throws: Optional[List[Response]] = Field(default=None, alias="throws")
-    pass
 
 
